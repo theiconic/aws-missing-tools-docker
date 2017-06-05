@@ -1,7 +1,4 @@
-FROM garland/aws-cli-docker
-
-RUN apk update && \
-    apk add bash
+FROM fstab/aws-cli
 
 ADD ./aws-missing-tools /opt/aws
 
